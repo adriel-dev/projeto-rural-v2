@@ -13,7 +13,7 @@ interface GetAnimalByIdUseCase {
 }
 
 interface GetAnimalByNameUseCase {
-    fun getAnimalByName(name: String): AnimalResponse
+    fun getAnimalByName(animalName: String): AnimalResponse
 }
 
 interface SaveAnimalUseCase {
@@ -21,7 +21,7 @@ interface SaveAnimalUseCase {
 }
 
 interface UpdateAnimalUseCase {
-    fun updateAnimal(animal: AnimalRequest): AnimalResponse
+    fun updateAnimal(animalId: String, animal: AnimalRequest): AnimalResponse
 }
 
 interface DeleteAnimalUseCase {
